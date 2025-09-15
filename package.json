@@ -3,8 +3,14 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "dev:server": "cd packages/server && bun run dev",
+    "dev:client": "cd packages/client && bun run dev",
+    "dev": "concurrently \"bun run dev:server\" \"bun run dev:client\""
+  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "concurrently": "^9.2.1"
   },
   "peerDependencies": {
     "typescript": "^5"
