@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <h1>Hello from client</h1>
-      <p>{message}</p>
+      <p className='font-bold p-4 text-3xl'>{message}</p>
     </>
   );
 }

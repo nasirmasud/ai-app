@@ -6,7 +6,7 @@
   "scripts": {
     "dev:server": "cd packages/server && bun run dev",
     "dev:client": "cd packages/client && bun run dev",
-    "dev": "concurrently \"bun run dev:server\" \"bun run dev:client\""
+    "dev": "concurrently --names \"server,client\" --prefix-colors \"green,cyan\" \"bun run dev:server\" \"bun run dev:client\""
   },
   "devDependencies": {
     "@types/bun": "latest",
