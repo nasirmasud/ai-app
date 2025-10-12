@@ -1,3 +1,4 @@
 {
-  "cSpell.words": ["HUGGINGFACE"]
+  "cSpell.words": ["HUGGINGFACE"],
+  "npm.packageManager": "bun"
 }
